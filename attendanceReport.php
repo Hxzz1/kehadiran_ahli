@@ -14,9 +14,9 @@ include('admincontrol.php');
 
 <head>
     <meta charset="UTF-8">
-    <title>Daftar Masuk Ahli Baru</title>
+    <title>Report Aktiviti Brader</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/activityList.css">
+    <link rel="stylesheet" href="css/activityList1.css">
 </head>
 
 <body>
@@ -113,7 +113,9 @@ include('admincontrol.php');
             }
         </style>
     </h3>
+
     <!-- Boarang carian Aktiviti -->
+    <h3 align='center'>
     <form action='' method='GET'>
         Aktiviti <select name='activity_id'>
             <option selected disabled value>Sila Pilih Aktiviti</option>
@@ -176,14 +178,15 @@ where activity_id = '" . $ma['activity_id'] . "' ) AS bil_hadir,
                 </div>
             </td>
         </tr>
-        <table class="table table-bordered table-responsive">
-            <tr bgcolor='#005af0'>
-                <td>Bil</td>
-                <td>Nama</td>
-                <td>No Kad Pengenalan</td>
-                <td>Kelas</td>
-                <td>Kehadiran</td>
-            </tr>
+        <table class="table table-bordered">
+        <thead>
+          <tr bgcolor="#00244D">
+            <td style="color: #ffffff; width: 10%;">Bil</td>
+            <td style="color: #ffffff; width: 30%;">Nama</td>
+            <td style="color: #ffffff; width: 10%;">No Kad Pengenalan</td>
+            <td style="color: #ffffff; width: 10%;">Kelas</td>
+            <td style="color: #ffffff; width: 10%;">Kehadiran</td>
+          </tr>
             <?PHP
 
             # syarat tambahan yang akan dimasukkan dalam arahan(query) senarai ahli
@@ -215,7 +218,7 @@ SELECT *,  member.nokp
         <td>" . ++$bil . "</td>
         <td>" . $m['name'] . "</td> 
         <td>" . $m['nokp'] . "</td> 
-        <td>" . $m['Form'] . " | " . $m['class_name'] . " </td> 
+        <td>" . $m['Form'] . "  " . $m['class_name'] . " </td> 
         <td align='center'>";
 
                 if (strlen($m['activity_id']) >= 1) {

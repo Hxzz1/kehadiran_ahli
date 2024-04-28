@@ -28,6 +28,7 @@ if (!empty($_GET['activity_id'])) {
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/activityList1.css">
     <?php include("connection.php"); ?>
 
   </head>
@@ -151,13 +152,13 @@ if (!empty($_GET['activity_id'])) {
     <?= $ma['activity_name'] ?><br>
     <?= $ma['activity_date'] ?> |
     <?= $ma['start_time'] ?><br>
-    Masukkan / Imbas Nokp / KOD anda di sini<br>
-    <form align='center' action='' method='POST'>
-
-      <label> </label>
-      <input type='text' name='nokp' autofocus autocomplete=" off" required onblur="this.focus()">
-      <input type='submit' value='Rekod Kehadiran'>
-    </form>
+        Masukkan / Imbas Nokp / KOD anda di sini<br>
+    <div class="search-form">
+            <form action="" method="POST">
+                <input type="text" name="activity_name" placeholder="Carian aktiviti">
+                <input type="submit" value="Cari">
+            </form>
+        </div>
 
     <?php
     $time = date("H:i:s");

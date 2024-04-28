@@ -41,7 +41,7 @@ if (!empty($_POST)) {
 
     #jika data berjaya disimpan.papar popup dan buka fail ahli-login-borang
     echo "<script>alert('Terima kasih kerana mendaftar');
-    window.location.href='loginForm.php';</script>";
+    window.location.href='loggedindex.php';</script>";
 } else {
   #jika data tidak berjaya disimpan.papar popup dan buka fail signup-borang
   #papar popup dan buka fail signup-borang.php

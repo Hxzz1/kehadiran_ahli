@@ -15,8 +15,9 @@ include('admincontrol.php');
     <meta charset="UTF-8">
     <title>Register aktiviti brader</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/activityList.css">
+    <link rel="stylesheet" href="css/activityList1.css">
     <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/table.css">
     <?php include("connection.php"); ?>
 
 
@@ -123,12 +124,13 @@ include('admincontrol.php');
         <td colspan='2' align='right'>
             | <a href='activityregisterForm.php' class='button-link'>Daftar Aktiviti / Perjumpaan Baru</a>
         </td>
-        <table class="table table-bordered table-responsive">
-            <tr bgcolor="#00244D">
-                <td style="color: #ffffff; width: 30%;">Nama aktiviti</td>
-                <td style="color: #ffffff; width: 20%;">Tarikh | masa</td>
-                <td style="color: #ffffff; width: 10%;">Tindakan</td>
-            </tr>
+        <table class="table table-bordered">
+        <thead>
+          <tr bgcolor="#00244D">
+            <td style="color: #ffffff; width: 30%;">Bil</td>
+            <td style="color: #ffffff; width: 30%;">Tarikh | Masa</td>
+            <td style="color: #ffffff; width: 30%;">Tindakan</td>
+          </tr>
             <?php
 
             # syarat tambahan yang akan dimasukkan dalam arahan(query) senarai aktiviti
@@ -194,5 +196,9 @@ include('admincontrol.php');
 
         a {
             text-decoration: none;
+        }
+
+        .body {
+    min-height: 100vh;
         }
     </style>

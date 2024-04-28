@@ -19,7 +19,7 @@ if (empty($_SESSION['nokp'])) {
 
 <head>
   <meta charset="UTF-8">
-  <title>Daftar Masuk Ahli Baru</title>
+  <title>Merekod kehadiran Murid</title>
   <link rel="stylesheet" href="css/header.css">
   <?php include("connection.php"); ?>
 
@@ -178,10 +178,10 @@ if (empty($_SESSION['nokp'])) {
 
         # mengambil data untuk di jadikan QR code atau bar code
         $data = $_SESSION['nokp'];
-        $saiz = "200x200";
+        $size = "200x200";
 
         # set umpukkan data API untuk memaparkan QR kod
-        $qr_api = "https://chart.googleapis.com/chart?chs=$saiz&cht=qr&chl=" . $data;
+        $qr_api = "https://api.qrserver.com/v1/create-qr-code/?size=$size&data=$data";
         echo "<div align='center'><img width='50%' src='" . $qr_api . "'></div>";
         ?>
         <br>

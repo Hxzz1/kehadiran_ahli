@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Daftar Masuk Ahli Baru</title>
+  <title>Senarai Ahli</title>
   <link rel="stylesheet" href="./style.css" />
   <?php include("connection.php");
   $condb = mysqli_connect("localhost", "root", "", "kehadiran_ahli");
@@ -15,7 +15,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Daftar Masuk Ahli Baru</title>
+  <title>Senarai Ahli</title>
   <link rel="stylesheet" href="css/header.css">
   <?php include("connection.php"); ?>
   <?php session_start(); ?>

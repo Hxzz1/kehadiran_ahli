@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Daftar Masuk Ahli Baru</title>
+    <title>Log Masuk ajh</title>
     <link rel="stylesheet" href="css/header.css">
     <?php include("connection.php");
     include("header.php") ?>
@@ -21,7 +21,7 @@
                 <div class="container">
                     <div class="signin-content">
                         <div class="signin-image">
-                            <figure><img src="src/sgnimg.jpeg" alt="sing up image"></figure>
+                            <figure><img src="src/welkamBek.png" alt="sing up image"></figure>
                             <a href="signupForm.php" class="signup-image-link">Belum Menjadi Ahli?</a>
                         </div>
 

@@ -4,9 +4,9 @@
       <meta charset="UTF-8">
       <title>Daftar Masuk Ahli Baru</title>
       <link rel="stylesheet" href="css/header.css">
+      <script src="js/bsound.js"></script>
       <?php include("connection.php"); ?>
       <?php session_start(); ?>
-
 </head>
 
 <body>
@@ -65,7 +65,7 @@
                         </div>
                   </nav>
       <?php } else { ?>
-                  <!-- taklogin -->
+                  <!--taklogin -->
                   <nav class="mainNav">
                         <div href="index.php" class="mainNav__logo">
                               <img src="src/KsahLogo.png" alt="Logo" height="50" width="50">

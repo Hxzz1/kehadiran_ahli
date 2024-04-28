@@ -21,17 +21,11 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4CAF50;
+    background-color: #ddd;
     color: white;
 }
 
-.table-bordered tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
 
-.table-bordered tr:hover {
-    background-color: #ddd;
-}
 
 .search-form {
     display: flex;
@@ -55,4 +49,3 @@ body {
     font-size: 14px;
     margin-top: 10px;
 }
-

@@ -55,7 +55,7 @@
                             </form>
                         </div>
                         <div class="signup-image">
-                            <figure><img src="src/sgnimg.jpeg" alt="sing up image" width="500"></figure>
+                            <figure><img src="src/signup.png" alt="sing up image" width="500"></figure>
                             <a href="loginForm.php" class="signup-image-link">Sudah Menjadi Ahli?</a>
                         </div>
                     </div>

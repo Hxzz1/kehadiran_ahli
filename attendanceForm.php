@@ -21,6 +21,7 @@ $n = mysqli_fetch_array($implement_activity);
     <meta charset="UTF-8">
     <title>Daftar Masuk Ahli Baru</title>
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/activityList1.css">
 
     <?php include("connection.php"); ?>
 
@@ -108,12 +109,13 @@ $n = mysqli_fetch_array($implement_activity);
     <?php } ?>
 
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     </head>
     <br><br><br>
 
     <!-- end header -->
-    <h3>Pengesahan Kehadiran Ahli</h3>
+    <h3 align='center'>Pengesahan Kehadiran Ahli</h3>
+    <h3 align='center'>
 
     Nama Aktiviti :
     <?= $n['activity_name'] ?> <br>
@@ -125,14 +127,15 @@ $n = mysqli_fetch_array($implement_activity);
 
     </head>
     <form action='attendanceProcess.php?activity_id=<?= $_GET['activity_id'] ?>' method='POST'>
-<table border='1' id='saiz' width='100%'>
-    <tr>
-        <td>Bil</td>
-        <td>Nama</td>
-        <td>Nokp</td>
-        <td>Kelas</td>
-        <td>Kehadiran</td>
-    </tr>
+    <table class="table table-bordered">
+        <thead>
+          <tr bgcolor="#00244D">
+            <td style="color: #ffffff; width: 10%;">Bil</td>
+            <td style="color: #ffffff; width: 40%;">Nama</td>
+            <td style="color: #ffffff; width: 30%;">Nokp</td>
+            <td style="color: #ffffff; width: 20%;">Kelas</td>
+            <td style="color: #ffffff; width: 50%;">Kehadiran</td>
+          </tr>
 
 <?php
 
@@ -177,8 +180,9 @@ while($m=mysqli_fetch_array($implement_attendance)){  ?>
 }
 ?>
 <tr>
-    <td colspan='4'></td>
+    <td colspan='2'></td>
     <td><input type='submit' value='Simpan'></td>
+    <td colspan='2'></td>
 </tr>
 </table>
 </form>
