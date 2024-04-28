@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <title>Sistem Merekod Kehadiran Murid</title>
    <link rel="stylesheet" href="./style.css">
+   <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=gAsNvXDsrGA#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
    <?php
    if (file_exists("header.php")) {
       include("header.php");
