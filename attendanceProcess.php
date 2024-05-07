@@ -15,7 +15,6 @@ foreach ($_POST['attendance'] as $nokp)
 }
 
 echo"<script>alert('Kemaskini Kehadiran Selesai');
-window.location.href='attendanceForm.php?activity_id=".$_GET['activity_id']."';
+window.location.href='activityList.php';
 </script>";
-
 ?>

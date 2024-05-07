@@ -4,7 +4,6 @@
       <meta charset="UTF-8">
       <title>Daftar Masuk Ahli Baru</title>
       <link rel="stylesheet" href="css/header.css">
-      <script src="js/bsound.js"></script>
       <?php include("connection.php"); ?>
       <?php session_start(); ?>
 </head>

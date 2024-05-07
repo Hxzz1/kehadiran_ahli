@@ -130,7 +130,7 @@ if (!empty($_GET['activity_id'])) {
   <!-- Boarang carian Aktiviti -->
   <form action='' method='GET'>
     Aktiviti <select name='activity_id'>
-      <option selected disabled value>Sila Pilih Aktiviti</option>
+      <option selected disabled value <style h3 align='center'></style>Sila Pilih Aktiviti yang anda ingin rekod</option>
 
       <?php
       # Proses memaparkan senarai aktiviti dalam bentuk drop down list

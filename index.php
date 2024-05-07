@@ -33,6 +33,7 @@
          </figure>
       </div>
    </header>
+
    <!-- partial -->
    <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js'></script>
    <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js'></script>
@@ -42,11 +43,9 @@
    <section id="copy-right">
       <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>
          Copyright &copy 2023-2025 : <a href="https://www.facebook.com/sahc1908/">Sultan Abdul Hamid College</a>
-
-
       </div>
-
    </section>
+   
    <style>
       .copy-right-sec {
          padding: 1.8rem;

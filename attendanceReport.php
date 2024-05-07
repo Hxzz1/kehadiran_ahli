@@ -118,7 +118,7 @@ include('admincontrol.php');
     <h3 align='center'>
     <form action='' method='GET'>
         Aktiviti <select name='activity_id'>
-            <option selected disabled value>Sila Pilih Aktiviti</option>
+            <option selected disabled value <style h3 align='center'></style>Sila Pilih Aktiviti yang ingin anda semak</option>
 
             <?php
             # Proses memaparkan senarai aktiviti dalam bentuk drop down list
