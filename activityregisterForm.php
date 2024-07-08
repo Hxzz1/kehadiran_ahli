@@ -121,6 +121,10 @@ include('admincontrol.php');
         <input type='submit' value='daftar'>
 
     </form>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+
 
     <!-- footer section -->
     <section id="copy-right">

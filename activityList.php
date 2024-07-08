@@ -2,12 +2,11 @@
 # memulakan fungsi session
 session_start();
 
-#memanggil fail header.php, connection.php dan guard-aktiviti.php
+# memanggil connection.php, admincontrol.php
 include('connection.php');
 include('admincontrol.php');
 
 ?>
-<!-- set header-->
 
 <html lang="en">
 
@@ -18,13 +17,14 @@ include('admincontrol.php');
     <link rel="stylesheet" href="css/activityList1.css">
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/print.css"
     <?php include("connection.php"); ?>
 
 
 </head>
 
 <body>
-    <!-- ser header -->
+    <!-- set header -->
     <?PHP if (!empty($_SESSION['level']) and $_SESSION['level'] == "ADMIN") { ?>
         <nav class="mainNav">
             <div href="loggedindex.php" class="mainNav__logo">
@@ -131,6 +131,7 @@ include('admincontrol.php');
             <td style="color: #ffffff; width: 30%;">Tarikh | Masa</td>
             <td style="color: #ffffff; width: 30%;">Tindakan</td>
           </tr>
+          <button onclick="window.print()" class="print-button"><span class="print-icon"></span></button>
             <?php
 
             # syarat tambahan yang akan dimasukkan dalam arahan(query) senarai aktiviti
@@ -171,6 +172,9 @@ include('admincontrol.php');
             ?>
         </table>
     </body>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
 
     <!-- footer section -->
     <section id="copy-right">

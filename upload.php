@@ -144,7 +144,8 @@ include('admincontrol.php');
             $file_member_data = fopen($tempnamefile, "r");
 
             # mendapatkan data dari fail baris demi baris
-            while (!feof($file_member_data)) {
+            while (!feof($file_member_data)) 
+            {
                 # mengambil data sebaris sahaja bg setiap pusingan
                 $takelinedata = fgets($file_member_data);
 
@@ -162,7 +163,7 @@ include('admincontrol.php');
                 # memasukkan data kedalam jadual ahli
                 $implement_instruct_save = mysqli_query($condb, $instruct_sql_save);
                 echo "<script>alert('import fail Data Selesai');
-            window.location.href='senarai-ahli.php';
+            window.location.href='memberList.php';
             </script>";
             }
             # menutup fail txt yang dibuka

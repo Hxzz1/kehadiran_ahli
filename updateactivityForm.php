@@ -135,6 +135,9 @@ $m = mysqli_fetch_array($implement_instruct);
         <input type='submit' value='daftar'>
 
     </form>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
 
     <!-- footer section -->
     <section id="copy-right">
